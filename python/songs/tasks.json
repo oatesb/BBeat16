@@ -1,0 +1,31 @@
+{
+    "song": {
+        "fileName": "test.mid",
+        "bpm": 120
+    },
+    "patch": {
+        "midiChannel": 1,
+        "patchBank": 3,
+        "sceneMidiControlNumber": 34
+
+    },
+    "events":
+        [
+            {
+                "time": "0:00",
+                "event": "setAfxPatch",
+                "data": 3
+            },
+            {
+                "time": "0:01",
+                "event": "switchAfxScene",
+                "data": 1
+            },
+            {
+                "time": "0:21",
+                "event": "switchAfxScene",
+                "data": 3
+            }
+            
+        ]
+}

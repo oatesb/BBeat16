@@ -1,0 +1,52 @@
+does default out play audio from the ins?
+1-2 All mix             =======> 9/10
+click 3             =======> 11
+guide voice 3             =======> 11
+
+
+headphone mgmt. out 15-16
+
+5 - lead voc         =======> 5
+6 - guitars          =======> 6
+7 - bass             =======> 7
+8 - Drum/Other       =======> 8
+
+
+RIPX flow
+
+Rip Song
+Level to mixer (-10 DB)
+Make Vocal D5 shift down 7 semitones
+
+
+Move Song 2 bars
+Make Click
+	Lookup tempo online
+	2BARS: Grand Marimba: C4 beat 1 C3 beat 2,3,4
+	Change tempo 2 Bars to real tempo
+Export
+	Select all in master
+	Selected Time
+	Mono
+	WAV
+Import the project
+	Assign tracks to Families
+	Mute Voice D5
+	EQ Stems
+
+Save Lyrics File in Folder
+	save per page 300dpi or more??
+	No idea how to change instrument from generic.
+Run Powershell clean track names
+
+Ableton Make Midi tracks only
+	Open MidiTracks Project
+	BPM must be 120.  All midi is always output at that tempo.
+	Make new Midi track.  Set this to use Output Volt on Channel 1
+	Add the Program to use
+	Copy all the scenes you need
+	Select the Track on right.  Rt Click select all content
+	CTRL J to combine
+	File Export Midi.
+	CTRL Z undo the combine.
+	Save Project

@@ -1,0 +1,36 @@
+{
+    "song": {
+        "fileName": "Nirvana - Breed.mid",
+        "bpm": 120
+    },
+    "patch": {
+        "midiChannel": 1,
+        "patchBank": 3,
+        "sceneMidiControlNumber": 34
+
+    },
+    "events":
+        [
+            {
+                "time": "0:00",
+                "event": "setAfxPatch",
+                "data": 3
+            },
+            {
+                "time": "0:01",
+                "event": "switchAfxScene",
+                "data": 2
+            },
+            {
+                "time": "2:07",
+                "event": "switchAfxScene",
+                "data": 6
+            },
+            {
+                "time": "2:32",
+                "event": "switchAfxScene",
+                "data": 2
+            }
+            
+        ]
+}

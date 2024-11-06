@@ -1,0 +1,66 @@
+{
+    "song": {
+        "fileName": "Nirvana - Smells Like Teen Spirit.mid",
+        "bpm": 120
+    },
+    "patch": {
+        "midiChannel": 1,
+        "patchBank": 3,
+        "sceneMidiControlNumber": 34
+
+    },
+    "events":
+        [
+            {
+                "time": "0:00",
+                "event": "setAfxPatch",
+                "data": 3
+            },
+            {
+                "time": "0:01",
+                "event": "switchAfxScene",
+                "data": 1
+            },
+            {
+                "time": "0:11",
+                "event": "switchAfxScene",
+                "data": 2
+            },
+            {
+                "time": "0:29",
+                "event": "switchAfxScene",
+                "data": 4
+            },
+            {
+                "time": "1:08",
+                "event": "switchAfxScene",
+                "data": 2
+            },
+            {
+                "time": "1:42",
+                "event": "switchAfxScene",
+                "data": 4
+            },
+            {
+                "time": "2:22",
+                "event": "switchAfxScene",
+                "data": 2
+            },
+            {
+                "time": "2:55",
+                "event": "switchAfxScene",
+                "data": 6
+            },
+            {
+                "time": "3:38",
+                "event": "switchAfxScene",
+                "data": 4
+            },
+            {
+                "time": "4:08",
+                "event": "switchAfxScene",
+                "data": 2
+            }
+            
+        ]
+}
