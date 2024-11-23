@@ -1,6 +1,6 @@
 {
     "song": {
-        "fileName": "Nirvana - Breed.mid",
+        "fileName": "Nirvana - Come as You Are.mid",
         "bpm": 120
     },
     "patch": {
@@ -19,15 +19,25 @@
             {
                 "time": "0:02",
                 "event": "switchAfxScene",
+                "data": 4
+            },
+            {
+                "time": "1:39",
+                "event": "switchAfxScene",
                 "data": 2
             },
             {
-                "time": "2:07",
+                "time": "2:02",
                 "event": "switchAfxScene",
                 "data": 6
             },
             {
-                "time": "2:32",
+                "time": "2:36",
+                "event": "switchAfxScene",
+                "data": 4
+            },
+            {
+                "time": "2:50",
                 "event": "switchAfxScene",
                 "data": 2
             }

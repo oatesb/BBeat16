@@ -32,16 +32,24 @@ class Song():
         ticks = self._calculateTicks(seconds=seconds)
         
         # Set Bank Select MSB and LSB for bank 4 before program change
-        self.track.append(Message('control_change', control=0, value=self.patch.patchBank, time=ticks, channel=self.patch.midiChannel))
+        self.track.append(Message('control_change', control=0, value=self.patch.patchBank, time=ticks, channel=self.patch.midiChannel - 1))
         # AxeFx does not need LSB
         # track.append(Message('control_change', control=32, value=0, time=0, channel=MIDI_CHANNEL))                
 
-        # Program Change immediatly after the CC.
-        self.track.append(Message('program_change', program=patchNumber, time=0, channel=self.patch.midiChannel))
+        # Program Change immediatly after the CC by a few ticks.
+        self.track.append(Message('program_change', program=patchNumber, time=5, channel=self.patch.midiChannel - 1))
 
     def switchAfxScene(self, seconds:float, sceneNumber:int):
         ticks = self._calculateTicks(seconds=seconds)
-        self.track.append(Message('control_change', control=self.patch.sceneMidiControlNumber, value=sceneNumber, time=ticks, channel=self.patch.midiChannel))
+        self.track.append(Message('control_change', control=self.patch.sceneMidiControlNumber, value=sceneNumber - 1, time=ticks, channel=self.patch.midiChannel - 1))
+
+    def ccOff(self, seconds:float, cc:int):
+        ticks = self._calculateTicks(seconds=seconds)
+        self.track.append(Message('control_change', control=cc, value=0, time=ticks, channel=self.patch.midiChannel - 1))
+
+    def ccOn(self, seconds:float, cc:int):
+        ticks = self._calculateTicks(seconds=seconds)
+        self.track.append(Message('control_change', control=cc, value=127, time=ticks, channel=self.patch.midiChannel - 1))
 
     def saveMidiFile(self):
         self.midiFile.save(self.fileName)
@@ -51,10 +59,19 @@ class SongGenerator:
         self.jsonData = jsonData
         self.song = self._createSong()
 
-    def _parseTime(self, timeStr: str) -> int:
-        """Convert 'MM:SS' time format to seconds."""
-        minutes, seconds = map(int, timeStr.split(':'))
-        return minutes * 60 + seconds
+    def _parseTime(self, timeStr: str) -> float:
+        """
+        Convert 'MM:SS.xx' time format to total seconds as a float with 2 decimal precision.
+        """
+        try:
+            minutes, seconds = timeStr.split(':')
+            minutes = int(minutes)
+            seconds = float(seconds)  # Handle fractional seconds directly
+            totalSeconds = minutes * 60 + seconds
+            return round(totalSeconds, 2)
+        except ValueError:
+            raise ValueError(f"Invalid time format: {timeStr}")
+    
 
     def _createSong(self) -> Song:
         """Initialize the Song instance from JSON data."""
@@ -72,6 +89,7 @@ class SongGenerator:
 
         midiFile = MidiFile()
         track = MidiTrack()
+        track.name = "track_0"
         midiFile.tracks.append(track)
 
         return Song(midiFile=midiFile, track=track, patch=patch, fileName=fileName, bpm=bpm)
@@ -89,6 +107,10 @@ class SongGenerator:
                 self.song.setAfxPatch(seconds=secondsDelta, patchNumber=event['data'])
             elif event['event'] == 'switchAfxScene':
                 self.song.switchAfxScene(seconds=secondsDelta, sceneNumber=event['data'])
+            elif event['event'] == 'ccOff':
+                self.song.ccOff(seconds=secondsDelta, cc=event['data'])
+            elif event['event'] == 'ccOn':
+                self.song.ccOn(seconds=secondsDelta, cc=event['data'])
 
         self.song.saveMidiFile()
 
@@ -106,7 +128,7 @@ class SongBatchProcessor:
 
     def processAllSongs(self):
         """Process all JSON song files in the specified folder."""
-        for file in self.folderPath.glob("*.json"):
+        for file in self.folderPath.glob("test.json"):
             print(f"Processing {file.name}...")
 
             try:

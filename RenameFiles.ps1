@@ -1,5 +1,5 @@
 # Set the path to the folder
-$folderPath = "C:\Guitar\stems\ripx\Nirvana - Smells Like Teen Spirit"
+$folderPath = "C:\Guitar\stems\ripx\Weezer - Say It Ain't So"
 
 # Map of keys and corresponding values
 $prefixMap = @{

@@ -1,6 +1,6 @@
 {
     "song": {
-        "fileName": "Nirvana - Smells Like Teen Spirit.mid",
+        "fileName": "test.mid",
         "bpm": 120
     },
     "patch": {
@@ -12,54 +12,54 @@
     "events":
         [
             {
-                "time": "0:01",
+                "time": "0:00.5",
                 "event": "setAfxPatch",
                 "data": 12
             },
             {
-                "time": "0:02",
-                "event": "switchAfxScene",
-                "data": 1
-            },
-            {
-                "time": "0:11",
+                "time": "0:1",
                 "event": "switchAfxScene",
                 "data": 2
             },
             {
-                "time": "0:29",
+                "time": "0:5.25",
                 "event": "switchAfxScene",
                 "data": 4
             },
             {
-                "time": "1:08",
-                "event": "switchAfxScene",
-                "data": 2
+                "time": "0:6.75",
+                "event": "ccOn",
+                "data": 69
             },
             {
-                "time": "1:42",
-                "event": "switchAfxScene",
-                "data": 4
-            },
-            {
-                "time": "2:22",
-                "event": "switchAfxScene",
-                "data": 2
-            },
-            {
-                "time": "2:55",
+                "time": "0:15",
                 "event": "switchAfxScene",
                 "data": 6
             },
             {
-                "time": "3:38",
-                "event": "switchAfxScene",
-                "data": 4
+                "time": "0:16",
+                "event": "ccOff",
+                "data": 69
             },
             {
-                "time": "4:08",
+                "time": "0:20",
+                "event": "setAfxPatch",
+                "data": 13
+            },
+            {
+                "time": "0:25",
                 "event": "switchAfxScene",
-                "data": 2
+                "data": 1
+            },
+            {
+                "time": "0:30",
+                "event": "switchAfxScene",
+                "data": 3
+            },
+            {
+                "time": "0:35",
+                "event": "switchAfxScene",
+                "data": 5
             }
             
         ]
