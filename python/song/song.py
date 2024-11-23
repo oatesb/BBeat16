@@ -128,7 +128,7 @@ class SongBatchProcessor:
 
     def processAllSongs(self):
         """Process all JSON song files in the specified folder."""
-        for file in self.folderPath.glob("test.json"):
+        for file in self.folderPath.glob("*.json"):
             print(f"Processing {file.name}...")
 
             try:
