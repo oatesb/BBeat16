@@ -1,0 +1,56 @@
+{
+    "song": {
+        "fileName": "Nirvana - In Bloom.mid",
+        "bpm": 120
+    },
+    "patch": {
+        "midiChannel": 1,
+        "patchBank": 3,
+        "sceneMidiControlNumber": 34
+
+    },
+    "events":
+        [
+            {
+                "time": "0:00.25",
+                "event": "setAfxPatch",
+                "data": 12
+            },
+            {
+                "time": "0:00.5",
+                "event": "switchAfxScene",
+                "data": 2
+            },
+            {
+                "time": "0:28",
+                "event": "switchAfxScene",
+                "data": 1
+            },
+            {
+                "time": "0:50",
+                "event": "switchAfxScene",
+                "data": 2
+            },
+            {
+                "time": "1:41.5",
+                "event": "switchAfxScene",
+                "data": 1
+            },
+            {
+                "time": "2:04",
+                "event": "switchAfxScene",
+                "data": 2
+            },
+            {
+                "time": "2:54",
+                "event": "switchAfxScene",
+                "data": 3
+            },
+            {
+                "time": "3:18",
+                "event": "switchAfxScene",
+                "data": 2
+            }
+            
+        ]
+}
