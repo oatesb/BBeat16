@@ -21,6 +21,11 @@
                 "data": 52
             },
             {
+                "time": "0:0.5",
+                "event": "sendVe500CcToggle",
+                "cc": 70
+            },
+            {
                 "time": "0:1",
                 "event": "sendVe500CcToggle",
                 "cc": 70
