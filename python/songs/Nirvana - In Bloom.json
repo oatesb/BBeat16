@@ -3,10 +3,14 @@
         "fileName": "Nirvana - In Bloom.mid",
         "bpm": 120
     },
-    "patch": {
+    "VE500": {
+        "midiChannel": 2,
+        "patchBank": 0
+    },
+    "AFX": {
         "midiChannel": 1,
         "patchBank": 3,
-        "sceneMidiControlNumber": 34
+        "sceneMidiCC": 34
 
     },
     "events":

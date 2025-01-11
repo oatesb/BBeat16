@@ -1,0 +1,69 @@
+{
+    "song": {
+        "fileName": "testve500AndAfx.mid",
+        "bpm": 120
+    },
+    "VE500": {
+        "midiChannel": 2,
+        "patchBank": 0
+    },
+    "AFX": {
+        "midiChannel": 1,
+        "patchBank": 3,
+        "sceneMidiCC": 34
+
+    },
+    "events":
+        [
+            {
+                "time": "0:00.5",
+                "event": "setVe500Patch",
+                "data": 52
+            },
+            {
+                "time": "0:1",
+                "event": "sendVe500CcToggle",
+                "cc": 70
+            },
+            {
+                "time": "0:2",
+                "event": "sendVe500CcToggle",
+                "cc": 70
+            },
+            {
+                "time": "0:3",
+                "event": "setAfxPatch",
+                "data": 15
+            },
+            {
+                "time": "0:4",
+                "event": "setAfxPatch",
+                "data": 12
+            },
+            {
+                "time": "0:5",
+                "event": "switchAfxScene",
+                "data": 4
+            },
+            {
+                "time": "0:6",
+                "event": "switchAfxScene",
+                "data": 3
+            },
+            {
+                "time": "0:7",
+                "event": "sendCcandValue",
+                "channel": 2,
+                "cc": 70,
+                "value": 127
+            },
+            {
+                "time": "0:7.5",
+                "event": "sendCcandValue",
+                "channel": 2,
+                "cc": 70,
+                "value": 127
+            }
+            
+        ]
+}
