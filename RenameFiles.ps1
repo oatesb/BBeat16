@@ -1,5 +1,5 @@
 # Set the path to the folder
-$folderPath = "C:\Guitar\stems\ripx\Weezer - Say It Ain't So"
+$folderPath = "C:\Guitar\stems\ripx\alice in chains - Down in a Hole Acoustic Cover"
 
 # Map of keys and corresponding values
 $prefixMap = @{
@@ -12,6 +12,7 @@ $prefixMap = @{
     "Click" = "3"
     "Piano" = "1"
     "String" = "1"
+    "Fill" = "1"
 }
 
 

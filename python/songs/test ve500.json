@@ -1,0 +1,38 @@
+{
+    "song": {
+        "fileName": "testve500.mid",
+        "bpm": 120
+    },
+    "patch": {
+        "midiChannel": 2,
+        "patchBank": 0,
+        "sceneMidiControlNumber": 34
+
+    },
+    "events":
+        [
+            {
+                "time": "0:00.5",
+                "event": "setAfxPatch",
+                "data": 1
+            },
+            {
+                "time": "0:3",
+                "event": "setAfxPatch",
+                "data": 7
+            }
+            ,
+            {
+                "time": "0:6",
+                "event": "setAfxPatch",
+                "data": 49
+            }
+            ,
+            {
+                "time": "0:16",
+                "event": "setAfxPatch",
+                "data": 17
+            }
+            
+        ]
+}

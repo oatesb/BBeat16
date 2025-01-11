@@ -27,12 +27,12 @@
                 "data": 2
             },
             {
-                "time": "2:02",
+                "time": "2:02.5",
                 "event": "switchAfxScene",
                 "data": 6
             },
             {
-                "time": "2:36",
+                "time": "2:35",
                 "event": "switchAfxScene",
                 "data": 4
             },
