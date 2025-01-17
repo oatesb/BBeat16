@@ -1,6 +1,6 @@
 {
     "song": {
-        "fileName": "Nirvana - Come as You Are.mid",
+        "fileName": "GreenDay - American Idiot.mid",
         "bpm": 120
     },
     "VE500": {
@@ -28,27 +28,32 @@
             {
                 "time": "0:02",
                 "event": "switchAfxScene",
-                "data": 4
+                "data": 1
             },
             {
-                "time": "1:39",
+                "time": "0:4.15",
                 "event": "switchAfxScene",
                 "data": 2
             },
             {
-                "time": "2:02.5",
+                "time": "1:49",
                 "event": "switchAfxScene",
-                "data": 6
+                "data": 3
             },
             {
-                "time": "2:35",
-                "event": "switchAfxScene",
-                "data": 4
-            },
-            {
-                "time": "2:50",
+                "time": "2:11",
                 "event": "switchAfxScene",
                 "data": 2
+            },
+            {
+                "time": "2:21.7",
+                "event": "sendVe500CcToggle",
+                "cc": 70
+            },
+            {
+                "time": "2:24.5",
+                "event": "sendVe500CcToggle",
+                "cc": 70
             }
             
         ]

@@ -1,6 +1,6 @@
 {
     "song": {
-        "fileName": "Nirvana - Come as You Are.mid",
+        "fileName": "Green Day - Boulevard of Broken Dreams.mid",
         "bpm": 120
     },
     "VE500": {
@@ -31,24 +31,39 @@
                 "data": 4
             },
             {
-                "time": "1:39",
+                "time": "0:0.55.5",
                 "event": "switchAfxScene",
                 "data": 2
             },
             {
-                "time": "2:02.5",
-                "event": "switchAfxScene",
-                "data": 6
-            },
-            {
-                "time": "2:35",
+                "time": "1:19",
                 "event": "switchAfxScene",
                 "data": 4
             },
             {
-                "time": "2:50",
+                "time": "0:2.10.5",
                 "event": "switchAfxScene",
                 "data": 2
+            },
+            {
+                "time": "2:34",
+                "event": "switchAfxScene",
+                "data": 4
+            },
+            {
+                "time": "0:2.45",
+                "event": "switchAfxScene",
+                "data": 6
+            },
+            {
+                "time": "3:14",
+                "event": "switchAfxScene",
+                "data": 2
+            },
+            {
+                "time": "3:50",
+                "event": "switchAfxScene",
+                "data": 6
             }
             
         ]

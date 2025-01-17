@@ -1,6 +1,6 @@
 {
     "song": {
-        "fileName": "Nirvana - Come as You Are.mid",
+        "fileName": "GreenDay - Holiday.mid",
         "bpm": 120
     },
     "VE500": {
@@ -28,27 +28,27 @@
             {
                 "time": "0:02",
                 "event": "switchAfxScene",
-                "data": 4
+                "data": 2
             },
             {
-                "time": "1:39",
+                "time": "2:03.25",
+                "event": "switchAfxScene",
+                "data": 3
+            },
+            {
+                "time": "2:25",
                 "event": "switchAfxScene",
                 "data": 2
             },
             {
-                "time": "2:02.5",
-                "event": "switchAfxScene",
-                "data": 6
+                "time": "2:26",
+                "event": "sendVe500CcToggle",
+                "cc": 70
             },
             {
-                "time": "2:35",
-                "event": "switchAfxScene",
-                "data": 4
-            },
-            {
-                "time": "2:50",
-                "event": "switchAfxScene",
-                "data": 2
+                "time": "3:06",
+                "event": "sendVe500CcToggle",
+                "cc": 70
             }
             
         ]
