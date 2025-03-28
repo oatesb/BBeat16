@@ -1,0 +1,35 @@
+{
+    "song": {
+        "fileName": "Bush - Machinehead.mid",
+        "bpm": 120
+    },
+    "VE500": {
+        "midiChannel": 2,
+        "patchBank": 0
+    },
+    "AFX": {
+        "midiChannel": 1,
+        "patchBank": 3,
+        "sceneMidiCC": 34
+
+    },
+    "events":
+        [
+            {
+                "time": "0:00.5",
+                "event": "setVe500Patch",
+                "data": 52
+            },
+            {
+                "time": "0:01",
+                "event": "setAfxPatch",
+                "data": 12
+            },
+            {
+                "time": "0:02",
+                "event": "switchAfxScene",
+                "data": 2
+            }
+            
+        ]
+}

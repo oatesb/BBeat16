@@ -84,6 +84,7 @@ class Song():
 
     def saveMidiFile(self):
         self.midiFile.save(self.fileName)
+        print(f"Created Midi: {self.fileName.absolute()}")
 
 class SongGenerator:
     def __init__(self, jsonData: Dict):

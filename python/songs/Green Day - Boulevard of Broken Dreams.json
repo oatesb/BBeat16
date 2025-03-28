@@ -31,7 +31,7 @@
                 "data": 4
             },
             {
-                "time": "0:0.55.5",
+                "time": "0:55.5",
                 "event": "switchAfxScene",
                 "data": 2
             },
@@ -41,7 +41,7 @@
                 "data": 4
             },
             {
-                "time": "0:2.10.5",
+                "time": "2:10.5",
                 "event": "switchAfxScene",
                 "data": 2
             },
@@ -51,7 +51,7 @@
                 "data": 4
             },
             {
-                "time": "0:2.45",
+                "time": "2:45",
                 "event": "switchAfxScene",
                 "data": 6
             },
