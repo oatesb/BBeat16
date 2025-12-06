@@ -34,3 +34,6 @@ Bass            25
 Nirvana DFS     14
 Nirvana Scene Controller USA    12
 FW6             30
+
+
+dir *.wav | % { ren $_ $_.Name.Substring(2) }; del .\wav;ls

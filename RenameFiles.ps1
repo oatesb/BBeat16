@@ -1,5 +1,5 @@
 # Set the path to the folder
-$folderPath = "C:\Guitar\stems\ripx\Bush - Machinehead"
+$folderPath = "C:\Guitar\stems\ripx\Bush - Comedown"
 
 # Map of keys and corresponding values
 $prefixMap = @{
@@ -20,7 +20,7 @@ $prefixMap = @{
 $defaultPrefix = "1"
 
 # Get all .wav files in the folder
-Get-ChildItem -Path $folderPath -Filter "*.wav" | ForEach-Object {
+Get-ChildItem -Path "$folderPath\*" -Include *.wav, *.mp3 | ForEach-Object {
     
     # Extract the file name without the extension
     $fileName = $_.BaseName
@@ -44,9 +44,9 @@ Get-ChildItem -Path $folderPath -Filter "*.wav" | ForEach-Object {
 
 
 # Get all .wav files in the specified folder
-$wavFiles = Get-ChildItem -Path $folderPath -Filter *.wav
+$musicFiles = Get-ChildItem -Path "$folderPath\*" -Include *.wav, *.mp3
 
-foreach ($file in $wavFiles) {
+foreach ($file in $musicFiles) {
     # Extract the file name without extension
     $fileNameWithoutExtension = [System.IO.Path]::GetFileNameWithoutExtension($file.Name)
 
