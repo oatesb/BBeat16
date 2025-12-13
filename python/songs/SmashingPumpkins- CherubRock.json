@@ -1,0 +1,50 @@
+{
+    "song": {
+        "fileName": "Smashing Pumpkins- CherubRock.mid",
+        "bpm": 120
+    },
+    "VE500": {
+        "midiChannel": 2,
+        "patchBank": 0
+    },
+    "AFX": {
+        "midiChannel": 1,
+        "patchBank": 3,
+        "sceneMidiCC": 34
+
+    },
+    "events":
+        [
+            {
+                "time": "0:00.5",
+                "event": "setVe500Patch",
+                "data": 52
+            },
+            {
+                "time": "0:01",
+                "event": "setAfxPatch",
+                "data": 10
+            },
+            {
+                "time": "0:02",
+                "event": "switchAfxScene",
+                "data": 1
+            },
+            {
+                "time": "0:22.75",
+                "event": "switchAfxScene",
+                "data": 2
+            },
+            {
+                "time": "3:10.5",
+                "event": "switchAfxScene",
+                "data": 3
+            },
+            {
+                "time": "3:32",
+                "event": "switchAfxScene",
+                "data": 2
+            }
+            
+        ]
+}
