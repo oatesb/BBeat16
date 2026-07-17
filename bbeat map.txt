@@ -50,3 +50,16 @@ Ableton Make Midi tracks only
 	File Export Midi.
 	CTRL Z undo the combine.
 	Save Project
+
+
+Audacity:
+track -> mix -> stereo to mon
+
+
+effects -> volume and compression -> loudness normalization
+perceived loudness to -12
+only check tread mono as dual-mono
+
+
+export audio
+16 bit signed
